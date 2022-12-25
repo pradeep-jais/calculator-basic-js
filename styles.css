@@ -173,7 +173,32 @@ p {
   padding: 1rem;
   border-radius: 1rem;
 }
-
+@media screen and (min-width: 410px) {
+  .calculator {
+    width: 60%;
+    height: 95vh;
+  }
+}
+@media screen and (min-width: 552px) {
+  .calculator {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 668px) {
+  .calculator {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .calculator {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .calculator {
+    width: 25%;
+  }
+}
 .box {
   display: grid;
   place-items: center;
@@ -187,6 +212,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2rem;
+  color: var(--clr-primary-1);
   background: var(--clr-grey-10);
 }
 .bg-1 {

@@ -46,14 +46,38 @@ function getValues(e) {
     answer.textContent = num2;
   }
 }
-
+// Maths
 function math(e) {
   switch (mathType) {
     case 'plus': {
       result = num1 + num2;
-      exp.textContent = expression + '+' + num2;
-      answer.textContent = result;
-      flag = false;
+      console.log(result);
+      displayAndResetCalc('+');
+      break;
+    }
+    case 'minus': {
+      result = num1 - num2;
+      displayAndResetCalc('-');
+      break;
+    }
+    case 'mul': {
+      result = num1 * num2;
+      displayAndResetCalc('*');
+      break;
+    }
+    case 'div': {
+      result = num1 / num2;
+      displayAndResetCalc('/');
+      break;
     }
   }
+}
+
+// reset calculator
+function displayAndResetCalc(mathType) {
+  exp.textContent = `${expression} ${mathType} ${num2}`;
+  answer.textContent = `Ans       ${result}`;
+  flag = false;
+  num1 = 0;
+  num2 = 0;
 }

@@ -206,6 +206,7 @@ p {
   border-radius: 1rem;
   color: var(--clr-primary-5);
   font-size: 1.25rem;
+  cursor: pointer;
 }
 .display {
   grid-area: a;

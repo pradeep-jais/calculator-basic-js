@@ -172,6 +172,12 @@ p {
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+.calculator:hover {
+  transform: scale(1.01);
+  box-shadow: var(--dark-shadow);
 }
 @media screen and (min-width: 410px) {
   .calculator {
@@ -207,6 +213,12 @@ p {
   color: var(--clr-primary-5);
   font-size: 1.25rem;
   cursor: pointer;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+.box:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
 }
 .display {
   grid-area: a;

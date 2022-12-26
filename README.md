@@ -21,3 +21,6 @@
 - Total 18 cell is needed
 - 5 X 4 grid design
 - 3 rows for display result
+
+# Bugs
+1. Multiple decimal point is being added. How to fix this?
